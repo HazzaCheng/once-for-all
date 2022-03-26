@@ -270,6 +270,7 @@ if __name__ == "__main__":
             )
         else:
             assert args.resume
+        # 训练 kernel
         train(
             distributed_run_manager,
             args,
@@ -279,6 +280,7 @@ if __name__ == "__main__":
         )
     elif args.task == "depth":
         from ofa.imagenet_classification.elastic_nn.training.progressive_shrinking import (
+            # 训练 depth
             train_elastic_depth,
         )
 

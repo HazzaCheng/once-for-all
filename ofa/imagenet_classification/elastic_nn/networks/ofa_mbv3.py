@@ -106,6 +106,7 @@ class OFAMobileNetV3(MobileNetV3):
                     stride = s
                 else:
                     stride = 1
+                # 动态的卷积层，搜索空间的体现
                 mobile_inverted_conv = DynamicMBConvLayer(
                     in_channel_list=val2list(feature_dim),
                     out_channel_list=val2list(output_channel),

@@ -231,6 +231,7 @@ class MobileNetV3Large(MobileNetV3):
 
         cfg = {
             #    k,     exp,    c,      se,         nl,         s,      e,
+            # 可以从 build_net_via_cfg 理解下这里的具体含义
             "0": [
                 [3, 16, 16, False, "relu", 1, 1],
             ],
